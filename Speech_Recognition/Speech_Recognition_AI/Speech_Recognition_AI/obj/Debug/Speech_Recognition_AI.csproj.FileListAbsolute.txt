@@ -1,0 +1,10 @@
+C:\Users\keine\source\repos\Speech_Cognition_AI\Speech_Recognition\Speech_Recognition_AI\Speech_Recognition_AI\bin\Debug\Speech_Recognition_AI.exe.config
+C:\Users\keine\source\repos\Speech_Cognition_AI\Speech_Recognition\Speech_Recognition_AI\Speech_Recognition_AI\bin\Debug\Speech_Recognition_AI.exe
+C:\Users\keine\source\repos\Speech_Cognition_AI\Speech_Recognition\Speech_Recognition_AI\Speech_Recognition_AI\bin\Debug\Speech_Recognition_AI.pdb
+C:\Users\keine\source\repos\Speech_Cognition_AI\Speech_Recognition\Speech_Recognition_AI\Speech_Recognition_AI\obj\Debug\Speech_Recognition_AI.csprojAssemblyReference.cache
+C:\Users\keine\source\repos\Speech_Cognition_AI\Speech_Recognition\Speech_Recognition_AI\Speech_Recognition_AI\obj\Debug\Speech_Recognition_AI.Form1.resources
+C:\Users\keine\source\repos\Speech_Cognition_AI\Speech_Recognition\Speech_Recognition_AI\Speech_Recognition_AI\obj\Debug\Speech_Recognition_AI.Properties.Resources.resources
+C:\Users\keine\source\repos\Speech_Cognition_AI\Speech_Recognition\Speech_Recognition_AI\Speech_Recognition_AI\obj\Debug\Speech_Recognition_AI.csproj.GenerateResource.cache
+C:\Users\keine\source\repos\Speech_Cognition_AI\Speech_Recognition\Speech_Recognition_AI\Speech_Recognition_AI\obj\Debug\Speech_Recognition_AI.csproj.CoreCompileInputs.cache
+C:\Users\keine\source\repos\Speech_Cognition_AI\Speech_Recognition\Speech_Recognition_AI\Speech_Recognition_AI\obj\Debug\Speech_Recognition_AI.exe
+C:\Users\keine\source\repos\Speech_Cognition_AI\Speech_Recognition\Speech_Recognition_AI\Speech_Recognition_AI\obj\Debug\Speech_Recognition_AI.pdb
