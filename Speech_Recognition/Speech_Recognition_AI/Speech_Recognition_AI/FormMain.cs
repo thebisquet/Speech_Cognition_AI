@@ -11,14 +11,18 @@ using System.Speech.Synthesis;
 
 namespace Speech_Recognition_AI
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
+        //Create object to instantiate a speech synthesizer
         SpeechSynthesizer synth = new SpeechSynthesizer();
 
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
-            synth.Speak("Test");
+
+            //Set voice to female and test initial voice settings
+            synth.SelectVoiceByHints(VoiceGender.Female);
+            synth.Speak("Hello, It's been awhile since I have seen you. How are you?");
         }
 
         private void Form1_Load(object sender, EventArgs e)

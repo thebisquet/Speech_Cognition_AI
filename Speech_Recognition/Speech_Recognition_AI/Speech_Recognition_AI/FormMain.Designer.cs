@@ -1,6 +1,6 @@
 ﻿namespace Speech_Recognition_AI
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         /// Required designer variable.
