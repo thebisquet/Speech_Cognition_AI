@@ -11,6 +11,7 @@ using System.Speech.Synthesis;
 using System.Speech.Recognition;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
+using System.IO;
 
 namespace Speech_Recognition_AI
 {
@@ -22,7 +23,6 @@ namespace Speech_Recognition_AI
 
         //Sleep/Wake mode
         Boolean wake = true;
-
 
         public FormMain()
         {
@@ -58,7 +58,7 @@ namespace Speech_Recognition_AI
             #endregion
         }
 
-        #region Say and Restart Methods
+        #region Say, KillFrogs, and Restart Methods
         /// <summary>
         /// AI Says what is passed as output. Sends output as text to form.
         /// </summary>
@@ -137,17 +137,17 @@ namespace Speech_Recognition_AI
                 if (user == "open google") 
                 { 
                     Process.Start("http://google.com");
-                    Say("I have opened Google for you, my dude.");
+                    Say("I have opened Google for you, search away bro.");
                 }
                 if (user == "open spotify")
                 {
                     Process.Start(@"C:\Users\keine\AppData\Roaming\Spotify\Spotify.exe");
-                    Say("I have opened Spotify for you, my dude.");
+                    Say("Rocket man, I have opened spotify.");
                 }
                 if (user == "close spotify")
                 {
-                    KillFrog("Spotify");
-                    Say("I have closed Spotify for you sir.");
+                    KillFrog("Spotify.exe");
+                    Say("I have closed Spotify for you big man.");
                 }
                 if (user == "restart" || user == "update")
                 {
@@ -157,6 +157,7 @@ namespace Speech_Recognition_AI
                 #endregion
             }
         }
+
         #region Useless Method Declarations
         private void Form1_Load(object sender, EventArgs e)
         {
