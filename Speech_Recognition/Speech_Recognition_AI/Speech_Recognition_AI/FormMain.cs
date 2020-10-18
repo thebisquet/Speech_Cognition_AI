@@ -54,12 +54,13 @@ namespace Speech_Recognition_AI
             CenterToScreen();
         }
 
-        public void say(String hi) {
-            synth.Speak(hi);
+        public void say(String output) {
+            outputText.Text = output;
+            synth.Speak(output);
         }
         
         public void restart() {
-            Process.Start(@"C:\Users\Jarvis\jarvis.exe");
+            Process.Start(@"C:\Users\keine\source\repos\Speech_Cognition_AI\Speech_Recognition\Speech_Recognition_AI\Speech_Recognition_AI\bin\Debug\Speech_Recognition_AI.exe");
             Environment.Exit(0);
         }
 
@@ -67,17 +68,20 @@ namespace Speech_Recognition_AI
         {
             //Store user voice results in a string for comparisons
             String user = e.Result.Text;
+            inputText.Text = user;
 
             //Set wake and sleep functionality
             if (user == "go to sleep")
             {
                 say("Love you bro, goodnight.");
                 wake = false;
+                sleepText.Text = "Asleep";
             }
             if (user == "jarvis")
             {
                 say("Sup dude?");
                 wake = true;
+                sleepText.Text = "Awake";
             }
 
             //If awake, dictate what to respond to
@@ -87,11 +91,29 @@ namespace Speech_Recognition_AI
                 if (user == "how are you") { say("I'm doing good brother, thanks for asking. Is there anything I can do for you?"); }
                 if (user == "what time is it") { say(DateTime.Now.ToString("h:mm tt")); }
                 if (user == "what day is it") { say(DateTime.Now.ToString("dddd M/d/yyyy")); }
-                if (user == "open google") { Process.Start("http://google.com"); }
-                if (user == "restart" || user == "update") { restart(); }
+                if (user == "open google") 
+                { 
+                    Process.Start("http://google.com");
+                    say("I have opened Google for you, my dude.");
+                }
+                if (user == "restart" || user == "update")
+                {
+                    say("Restarting bro.");
+                    restart();
+                }
             }
         }
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inputBox_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void outputBox_Enter(object sender, EventArgs e)
         {
 
         }
